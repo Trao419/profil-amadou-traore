@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Profil de Amadou Traore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>Bienvenue sur la Carte de Profil de Amadou Traore</h1>
+        <img src="profile.jpg" alt="Image de Amadou Traore">
+        <p>Découvrez mes services et contactez-moi pour plus d'informations.</p>
+    </header>
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Je suis Amadou Traore, un développeur passionné avec une expérience dans divers langages de programmation.</p>
+        <img src="about.jpg" alt="À propos de Amadou Traore">
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li><img src="service1.png" alt="Développement web">Développement web</li>
+            <li><img src="service2.png" alt="Consultation">Consultation</li>
+            <li><img src="service3.png" alt="Maintenance de sites">Maintenance de sites</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm" onsubmit="validateForm(event)">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <section id="interactivity">
+        <h2>Interactivité</h2>
+        <button id="alertButton" onclick="showAlert()" onmouseover="changeColorOnHover(this)" onmouseout="resetColor(this)">Cliquez-moi</button>
+    </section>
+</body>
+</html>
